@@ -4,9 +4,7 @@ package main;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import panels.CreateAccount;
-import panels.Login;
-import panels.Panels;
+import panels.*;
 
 /**
  *
@@ -14,21 +12,21 @@ import panels.Panels;
  */
 public class Main extends javax.swing.JFrame {
     
-    public final int WIDTH = 800, HEIGHT = 600;
+    public static final int WIDTH = 800, HEIGHT = 600;
     
     private Login loginPanel = new Login(this);
     private CreateAccount createAccount = new CreateAccount(this);
-    
     
     public Main() {
         
         initComponents();
      
-        this.setSize(WIDTH, HEIGHT);
-        setView(Panels.LOGIN);
+//        System.out.println("Main Size: " + this.getSize());
 
-        System.out.println("Main Size: " + this.getSize());
+        this.setBounds(200, 200, WIDTH, HEIGHT);
         
+        // set login panel as first screen user sees.
+        setView(Panels.LOGIN);
     }
 
     /**
@@ -93,6 +91,7 @@ public class Main extends javax.swing.JFrame {
         });
     }
     
+    // sets the next screen for the user
     public void setView(Panels panel) {
         
         switch (panel) {
@@ -112,8 +111,8 @@ public class Main extends javax.swing.JFrame {
         this.repaint();
         this.revalidate();
         
-        System.out.println("Pos: " + loginPanel.getX() + ", " + loginPanel.getY());
-        System.out.println("WH: " + loginPanel.getWidth() + ", " + loginPanel.getHeight());
+//        System.out.println("Pos: " + loginPanel.getX() + ", " + loginPanel.getY());
+//        System.out.println("WH: " + loginPanel.getWidth() + ", " + loginPanel.getHeight());
         
     }
     

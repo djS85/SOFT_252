@@ -20,7 +20,7 @@ public class Login extends javax.swing.JPanel {
         initComponents();
         
         this.main = _main;
-        this.setSize(800, 600);
+        this.setSize(Main.WIDTH, Main.HEIGHT);
         
     }
 
@@ -47,6 +47,12 @@ public class Login extends javax.swing.JPanel {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel4.setText("Log In");
         jLabel4.setAlignmentY(0.0F);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +136,11 @@ public class Login extends javax.swing.JPanel {
         main.setView(Panels.CREATE_ACCOUNT);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
