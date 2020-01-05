@@ -23,7 +23,7 @@ public class Main extends javax.swing.JFrame {
      
 //        System.out.println("Main Size: " + this.getSize());
 
-        this.setBounds(200, 200, WIDTH, HEIGHT);
+        this.setBounds(500, 200, WIDTH, HEIGHT);
         
         // set login panel as first screen user sees.
         setView(Panels.LOGIN);
