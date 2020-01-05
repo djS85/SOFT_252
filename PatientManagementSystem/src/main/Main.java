@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import panels.*;
+import users.UserFactory;
 
 /**
  *
@@ -14,10 +15,14 @@ public class Main extends javax.swing.JFrame {
     
     public static final int WIDTH = 800, HEIGHT = 600;
     
+    
+    
     private Login loginPanel = new Login(this);
     private CreateAccount createAccount = new CreateAccount(this);
     
     public Main() {
+        
+        
         
         initComponents();
         

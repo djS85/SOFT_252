@@ -9,4 +9,15 @@ public class Admin implements User {
     
     private int ID;
     
+    public Admin() {
+        
+        
+    
+    }
+
+    @Override
+    public void login() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
