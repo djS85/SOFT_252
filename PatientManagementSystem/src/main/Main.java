@@ -20,11 +20,10 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         
         initComponents();
-     
-//        System.out.println("Main Size: " + this.getSize());
-
-        this.setBounds(500, 200, WIDTH, HEIGHT);
         
+        // set size and position of app
+        this.setBounds(500, 200, WIDTH, HEIGHT);
+
         // set login panel as first screen user sees.
         setView(Panels.LOGIN);
     }
